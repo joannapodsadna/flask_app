@@ -8,6 +8,11 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+
+@app.route('/version')
+def index():
+    return "version 0.0.1"
+
 @app.route('/cpu', methods=['POST', 'GET'])
 def cpu():
     cpu = psutil.cpu_times()
