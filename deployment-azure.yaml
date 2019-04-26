@@ -19,3 +19,5 @@ spec:
         image: demok8sdevops1.azurecr.io/myapp1:latest
         ports:
         - containerPort: 4001
+     imagePullSecrets:
+      - name: kama-kama
